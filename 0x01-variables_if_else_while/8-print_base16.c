@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entery point
@@ -10,22 +10,16 @@
 
 int main(void)
 {
-	int digit = 0;
+	int digit = 48;
 
-	while (digit < 10)
+	while (digit <= 102)
 	{
-	putchar('0' + digit);
-	digit++;
+		putchar(digit);
+
+		if (digit == 57)
+			digit += 39;
+		digit++;
 	}
-
-	digit = 0;
-
-	while (digit < 6)
-	{
-	putchar('a' + digit);
-	digit++;
-	}
-
 	putchar('\n');
 
 	return (0);
