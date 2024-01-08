@@ -8,7 +8,7 @@
  * Return: pointer to s
 */
 
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	int itr;
 
