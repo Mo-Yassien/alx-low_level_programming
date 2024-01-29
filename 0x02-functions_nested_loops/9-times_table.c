@@ -8,7 +8,7 @@
  * 0, 1, 2, 3, ..
  *
 */
-void times_table(void)
+void times_table(void) /*prints time table*/
 {
 	int num, mult, prod;
 
