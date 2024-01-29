@@ -2,6 +2,12 @@
 
 /**
  * time_table - prints the 9 time table
+ *
+ * for example:
+ *
+ * 0, 0, 0, 0, ..
+ * 0, 1, 2, 3, ..
+ *
 */
 void times_table(void)
 {
