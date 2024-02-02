@@ -2,6 +2,7 @@ section .data
 	hello db "Hello, Holberton", 0xa
 
 section .text
+	extern printf, exit
 	global main
 
 main:
