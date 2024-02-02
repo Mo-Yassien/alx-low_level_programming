@@ -1,16 +1,12 @@
 section .data
-	hello db "Hello, Holberton", 0xa
+	msg db "Hello, Holberton", 0xa, 0
 
 section .text
-	extern printf, exit
+	extern printf
 	global main
 
 main:
-	; Call printf
-	mov rdi, hello
+	mov eax, 0
+	mov edi, msg
 	call printf
-
-	; Exit the program
-	mov rdi, 0
-	call exit
 
