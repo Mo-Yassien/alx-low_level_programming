@@ -26,9 +26,9 @@ int _atoi(char *s)
 			if (state == 1 && (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > INT_MAX % 10)))
 			{
 				if (sign == 1)
-					return INT_MAX;
+					return (INT_MAX);
 				else
-					return INT_MIN;
+					return (INT_MIN);
 			}
 
 			result = result * 10 + digit;
@@ -36,12 +36,12 @@ int _atoi(char *s)
 		}
 		else if (state == 1)
 		{
-			/* If non-numeric character is encountered after numbers, break the loop */
+			/* If a non-numeric character is encountered after numbers, break the loop */
 			break;
 		}
 
 		s++;
 	}
 
-	return result * sign;
+	return (result * sign);
 }
