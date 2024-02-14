@@ -36,7 +36,6 @@ int _atoi(char *s)
 		}
 		else if (state == 1)
 		{
-			/* If a non-numeric character is encountered after numbers, break the loop */
 			break;
 		}
 
